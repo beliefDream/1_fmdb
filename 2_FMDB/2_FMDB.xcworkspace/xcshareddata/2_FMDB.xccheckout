@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>ADA06F7F-EAE8-4462-83C9-301D959B3BF7</string>
+	<string>FCFD0C67-4A43-4D1C-BB40-938FBBE158D2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>2_FMDB</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/beliefDream/1_fmdb.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>2_FMDB/2_FMDB.xcodeproj</string>
+	<string>2_FMDB/2_FMDB.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4FF445219039E28A1FD5600F2028D5F0A55F8B0F</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/beliefDream/1_fmdb.git</string>
