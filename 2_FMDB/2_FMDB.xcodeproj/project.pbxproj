@@ -13,6 +13,8 @@
 		F1F864681BE304D400EF9662 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F864671BE304D400EF9662 /* Images.xcassets */; };
 		F1F8646B1BE304D400EF9662 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F864691BE304D400EF9662 /* LaunchScreen.xib */; };
 		F1F864771BE304D400EF9662 /* __FMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F864761BE304D400EF9662 /* __FMDBTests.m */; };
+		F1F864831BE3173000EF9662 /* Root2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F864811BE3173000EF9662 /* Root2ViewController.m */; };
+		F1F864841BE3173000EF9662 /* Root2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F864821BE3173000EF9662 /* Root2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		F1F864701BE304D400EF9662 /* 2_FMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2_FMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F864751BE304D400EF9662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F864761BE304D400EF9662 /* __FMDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __FMDBTests.m; sourceTree = "<group>"; };
+		F1F864801BE3173000EF9662 /* Root2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Root2ViewController.h; sourceTree = "<group>"; };
+		F1F864811BE3173000EF9662 /* Root2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Root2ViewController.m; sourceTree = "<group>"; };
+		F1F864821BE3173000EF9662 /* Root2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Root2ViewController.xib; sourceTree = "<group>"; };
 		FED0BDFEE7E23923FA942F71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +107,9 @@
 			children = (
 				F1F864641BE304D400EF9662 /* AppDelegate.h */,
 				F1F864651BE304D400EF9662 /* AppDelegate.m */,
+				F1F864801BE3173000EF9662 /* Root2ViewController.h */,
+				F1F864811BE3173000EF9662 /* Root2ViewController.m */,
+				F1F864821BE3173000EF9662 /* Root2ViewController.xib */,
 				F1F864671BE304D400EF9662 /* Images.xcassets */,
 				F1F864691BE304D400EF9662 /* LaunchScreen.xib */,
 				F1F864601BE304D400EF9662 /* Supporting Files */,
@@ -220,6 +228,7 @@
 			files = (
 				F1F8646B1BE304D400EF9662 /* LaunchScreen.xib in Resources */,
 				F1F864681BE304D400EF9662 /* Images.xcassets in Resources */,
+				F1F864841BE3173000EF9662 /* Root2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F864831BE3173000EF9662 /* Root2ViewController.m in Sources */,
 				F1F864661BE304D400EF9662 /* AppDelegate.m in Sources */,
 				F1F864631BE304D400EF9662 /* main.m in Sources */,
 			);
