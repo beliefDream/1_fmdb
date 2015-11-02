@@ -64,7 +64,7 @@
 
 - (void)createTable {
     if ([self.db open]) {
-        NSString * createSql = @"CREATE TABLE  IF NOT EXISTS PersonList (Name text, Age integer,  Sex integer, Phone text, Address text, Photo blob)";
+        NSString * createSql = @"CREATE TABLE  IF NOT EXISTS PersonList (Name text, Age integer,  Number integer, Sex integer, Phone text, Address text, Photo blob)";
         BOOL isExecute = [_db executeUpdate:createSql];
         if (!isExecute) {
             NSLog(@" ... error");
@@ -75,14 +75,10 @@
 
 - (IBAction)insertData:(id)sender {
     if ([self.db open]) {
-//        NSString * insertSql = @"INSERT INTO  PersonList (Name, Age, Sex) VALUES (?, ?, ?)";
-//
-//        [_db executeUpdate:@"INSERT INTO  PersonList (Name) VALUES (?, ?, ?)",
-//        /* _nameTF.text, _ageTF.text, _numberTF.text*/ @"11", @11, @11];
-//        [_db executeUpdate:@"INSERT INTO  PersonList (Name) VALUES (? )", @"aa"];
-        NSString *sql = @"INSERT INTO PersonList (Name, Age) VALUES (?, ?)";
-             [_db executeUpdate:sql, @"sdsd", _ageTF.text];
-   
+        NSLog(@"%@ %@   %@", _nameTF.text, _ageTF.text, _numberTF.text);
+        [_db executeUpdate:@"INSERT INTO PersonList (Name, Age, Number) VALUES(?, ?, ?)",
+         _nameTF.text, _ageTF.text, _numberTF.text];
+
         [_db close];
     }
 }
@@ -97,21 +93,20 @@
 
 - (IBAction)modifyData:(id)sender {
     if ([self.db open]) {
-        [_db executeUpdate:@"UPDATE PersonList SET Age = ? WHERE Name = ?",
-        [NSNumber numberWithInt:30],@"sdsd"];
+        [_db executeUpdate:@"UPDATE PersonList SET Age = ? WHERE Name = ?", [NSNumber numberWithInt:30], @"sdsd"];
         [_db close];
     }
 }
 
 - (IBAction)queryData:(id)sender {
     if ([self.db open]) {
-        NSString * queryStr = @"SELECT Name, Age FROM PersonList";
+        NSString * queryStr = @"SELECT Name, Age, Number FROM PersonList";
         FMResultSet * rs = [_db executeQuery:queryStr];
-        if ([rs next]) {
-           NSString * name = [rs stringForColumn:@"Name"];
-           int age = [rs intForColumn:@"Age"];
-            int kk = 0;
-            NSLog(@"name = %@, age = %d, number =  %d\n\n", name, age, kk);
+        while ([rs next]) {
+            NSString *name = [rs stringForColumn:@"Name"];
+            int age = [rs intForColumn:@"Age"];
+            int number = [rs intForColumn:@"Number"];
+            NSLog(@"name=  %@, age= %d, number= %d", name, age, number);
         }
         [_db close];
     }
